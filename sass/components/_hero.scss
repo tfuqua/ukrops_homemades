@@ -1,0 +1,64 @@
+.hero.hero-1, .hero.hero-2 {
+  margin-top:-15px; //move hero image up to header
+}
+
+.material-bg{
+  background: url('images/cream.png') top left repeat;
+}
+
+.hero.hero-3 {
+  min-height: 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  margin-top:0;
+  padding: 0;
+
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+
+    .hero-text{
+
+      background: transparent;
+      font-size: 22px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.59;
+      color: #794400;
+
+
+      h3 {
+        font-size: 40px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        color: #c1311a;
+      }
+
+      @media (min-width: $screen-md-min) {
+
+      }
+
+      .hero-button {
+        text-align: center;
+
+        a {
+          border-radius: 5px;
+          background-image: linear-gradient(to bottom, #db2c10, #bf311a);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+
+          @media (max-width: $screen-sm-max) {
+            width:320px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }

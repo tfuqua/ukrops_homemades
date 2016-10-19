@@ -1,0 +1,109 @@
+.featured-content-wrapper {
+
+  background-image: none;
+
+  .container-fluid {
+
+      padding: 0 30px;
+      margin: 0 auto;
+      z-index: 2;
+
+    .featured-item{
+
+      background: #fff;
+      position: relative;
+      box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
+
+      &:nth-child(3n){
+        flex:1;
+      }
+      &:nth-child(n){
+        background: #fff;
+      }
+    }
+
+    .featured-border{
+      border: 1px dashed #704400;
+      position: absolute;
+      margin:15px;
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+    }
+
+    .featured-section {
+      margin:20px;
+      z-index: 200;
+      background: none;
+
+      @media (min-width: $screen-md-min) {
+        margin:0;
+        padding: 10px 30px 25px;
+      }
+    }
+
+
+    @media (min-width: $screen-md-min) {
+      .flex-div{
+        display: flex;
+
+          > div {
+            flex: 1;
+          }
+      }
+    }
+
+    .featured-img {
+      text-align: center;
+
+      img {
+        max-width:75%;
+        min-width: 0%;
+        height:auto;
+
+        @media (min-width: $screen-lg-min) {
+          //margin-top:-45px;
+        }
+      }
+    }
+
+    .featured-body{
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      color: #794400;
+
+      @media (min-width: $screen-md-min) {
+        text-align: left;
+      }
+    }
+
+    .featured-button {
+
+      a {
+        border-radius: 5px;
+        color:#fff;
+        background-color: #bf311a;
+        background-image: none;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    h3 {
+      width: 100%;
+      font-size: 32px;
+      margin:0;
+      padding: 30px 35px 15px;
+      font-size: 30px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      color: #c1311a;
+      background: url('images/cream.png') top left repeat;
+      text-shadow: none;
+    }
+  }
+}
