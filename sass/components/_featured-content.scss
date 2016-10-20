@@ -27,19 +27,19 @@
     .featured-border{
       border: 1px dashed #704400;
       position: absolute;
-      margin:15px;
-      width: calc(100% - 30px);
-      height: calc(100% - 30px);
+      margin:20px;
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
     }
 
     .featured-section {
-      margin:20px;
+      margin: 5px 25px 25px;
       z-index: 200;
       background: none;
 
       @media (min-width: $screen-md-min) {
         margin:0;
-        padding: 10px 30px 25px;
+        padding: 10px 40px 40px;
       }
     }
 
@@ -62,8 +62,14 @@
         min-width: 0%;
         height:auto;
 
+        @media (min-width: $screen-md-min) {
+          min-height: auto;
+          max-width:100%;
+        }
+
         @media (min-width: $screen-lg-min) {
-          //margin-top:-45px;
+          max-width:100%;
+          margin-top:-45px;
         }
       }
     }
@@ -84,10 +90,9 @@
     .featured-button {
 
       a {
-        border-radius: 5px;
         color:#fff;
-        background-color: #bf311a;
-        background-image: none;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, #db2c10, #bf311a);
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
       }
     }
@@ -96,12 +101,13 @@
       width: 100%;
       font-size: 32px;
       margin:0;
-      padding: 30px 35px 15px;
+      padding: 35px 40px 15px;
       font-size: 30px;
       font-weight: 500;
       font-style: normal;
       font-stretch: normal;
       color: #c1311a;
+      text-transform: capitalize;;
       background: url('images/cream.png') top left repeat;
       text-shadow: none;
     }
