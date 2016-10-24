@@ -13,17 +13,17 @@ header {
     width: 100%; }
     header .brand img {
       position: absolute;
-      height: 110px;
       top: 0;
       margin: 0;
       margin-left: -65px;
       left: 50%;
-      z-index: 600; }
+      z-index: 600;
+      height: 100px; }
       @media (min-width: 900px) {
         header .brand img {
-          top: -25px;
+          top: -17.5px;
           margin: 0;
-          height: 109px;
+          height: 110px;
           left: 15px; } }
 
 @media (max-width: 899px) {
@@ -41,7 +41,7 @@ header {
   .hero.hero-1 .hero-text {
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.85);
-    padding: 15px 20px;
+    padding: 20px 20px;
     margin: 30px 15px;
     margin-top: 50px;
     text-align: left;
@@ -51,7 +51,7 @@ header {
     max-width: 90%; }
     @media (min-width: 900px) {
       .hero.hero-1 .hero-text {
-        padding: 34px 50px;
+        padding: 34px 34px;
         max-width: 60%; } }
   .hero.hero-1 .hero-button a {
     border-radius: 5px;
