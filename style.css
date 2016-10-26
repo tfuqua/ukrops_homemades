@@ -30,33 +30,36 @@ header {
   html.show-menu .nav-wrapper {
     padding-top: 75px; } }
 
-.hero.hero-1 {
+.hero {
   margin-top: -15px; }
-  .hero.hero-1 .hero-text-wrapper > div {
-    text-align: center; }
-    @media (min-width: 900px) {
-      .hero.hero-1 .hero-text-wrapper > div {
-        text-align: left;
-        padding-left: 15px; } }
-  .hero.hero-1 .hero-text {
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 20px 20px;
-    margin: 30px 15px;
-    margin-top: 50px;
-    text-align: left;
-    display: inline-block;
-    margin: 50px auto 30px;
-    width: auto;
-    max-width: 90%; }
-    @media (min-width: 900px) {
-      .hero.hero-1 .hero-text {
-        padding: 34px 34px;
-        max-width: 60%; } }
-  .hero.hero-1 .hero-button a {
-    border-radius: 5px;
-    background-image: linear-gradient(to bottom, #db2c10, #bf311a);
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
+
+.hero.hero-1 .hero-text-wrapper > div {
+  text-align: center; }
+  @media (min-width: 900px) {
+    .hero.hero-1 .hero-text-wrapper > div {
+      text-align: left;
+      padding-left: 15px; } }
+
+.hero.hero-1 .hero-text {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px 20px;
+  margin: 30px 15px;
+  margin-top: 50px;
+  text-align: left;
+  display: inline-block;
+  margin: 50px auto 30px;
+  width: auto;
+  max-width: 90%; }
+  @media (min-width: 900px) {
+    .hero.hero-1 .hero-text {
+      padding: 34px 34px;
+      max-width: 60%; } }
+
+.hero.hero-1 .hero-button a {
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #db2c10, #bf311a);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
 
 .hero.hero-2 {
   padding: 20px 0px 0px;
@@ -73,7 +76,7 @@ header {
   .hero.hero-2 .hero-text {
     background: rgba(255, 255, 255, 0.8);
     font-size: 22px;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.59;

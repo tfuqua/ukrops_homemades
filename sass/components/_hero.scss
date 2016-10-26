@@ -1,5 +1,9 @@
+
+.hero{
+  margin-top:-15px; //move hero image up to header  
+}
+
 .hero.hero-1{
-  margin-top:-15px; //move hero image up to header
 
   .hero-text-wrapper>div{
       text-align: center;
@@ -64,14 +68,13 @@
       }
 
       font-size: 22px;
-      font-weight: normal;
+      font-weight: 400;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.59;
       color: #794400;
       position: relative;
       z-index: 200;
-
 
       h3 {
         font-size: 40px;
