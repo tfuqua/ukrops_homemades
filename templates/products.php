@@ -71,16 +71,21 @@ get_header(); ?>
 
 							$children = get_terms( array(
 								'taxonomy' => 'product',
-								'hide_empty' => true,
+								'hide_empty' => false,
 								'hierarchical' => true,
 								'parent'   =>  $id
 							));
 
 							$m = '<ul>';
 							foreach ( $children as $child) {
-								$child_link = get_term_link( $child );
 
-								$m .= '<li><a href="'. $child_link . '">'. $child->name . '</a></li>';
+								$link = get_field('skip_link', $child);
+
+								if (empty($link) or $link == null){
+									$link = get_term_link($child);
+								}
+
+								$m .= '<li><a href="'. $link . '">'. $child->name . '</a></li>';
 							}
 
 							$m .= '</ul>';
@@ -100,6 +105,7 @@ get_header(); ?>
           }
       	}
       ?>
+			<div class="clearfix"></div>
 			<br /> <br />
 		</div>
 		</main><!-- #main -->
