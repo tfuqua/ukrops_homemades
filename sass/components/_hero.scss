@@ -1,6 +1,6 @@
 
 .hero{
-  margin-top:-15px; //move hero image up to header  
+  margin-top:-15px; //move hero image up to header
 }
 
 .hero.hero-1{
@@ -62,10 +62,6 @@
     .hero-text{
 
       background: rgba(255,255,255, .8);
-
-      @media (min-width: $screen-sm-min) {
-      background: transparent;
-      }
 
       font-size: 22px;
       font-weight: 400;

@@ -81,9 +81,6 @@ header {
     color: #794400;
     position: relative;
     z-index: 200; }
-    @media (min-width: 481px) {
-      .hero.hero-2 .hero-text {
-        background: transparent; } }
     .hero.hero-2 .hero-text h3 {
       font-size: 40px;
       font-weight: 500;

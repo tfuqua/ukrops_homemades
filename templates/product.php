@@ -10,7 +10,7 @@ get_header(); ?>
 			<!-- Hero Image -->
 	    <?php if(get_field('hero_image')) { ?>
 	      <?php $background = wp_get_attachment_image_src(get_field('hero_image'), 'full', false); ?>
-		     <div class="hero product-hero" style="background-image: url('<?php echo $background[0] ?>');">
+		     <div class="hero mini-hero product-hero" style="background-image: url('<?php echo $background[0] ?>');">
 	         <div class="hero-text-wrapper">
 	           <div>
 	             	<div class="hero-text">
@@ -20,12 +20,12 @@ get_header(); ?>
  									<div class="hero-body">
  		              	<?php echo get_field('hero_body')?>
  									</div>
+									<?php if(get_field('hero_button')) { ?>
+										<div>
+											<a class="button" href="<?php echo get_field('hero_button_link')?>"><?php echo get_field('hero_button')?></a>
+										</div>
+									<?php } ?>
 	             	</div>
-	               <?php if(get_field('hero_button')) { ?>
-		               <div class="hero-button">
-		                 <a href="<?php echo get_field('hero_button_link')?>"><?php echo get_field('hero_button')?></a>
-		               </div>
-	               <?php } ?>
 	           </div>
 	         </div>
 	      </div>

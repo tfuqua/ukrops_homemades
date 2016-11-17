@@ -16,7 +16,7 @@ get_header(); ?>
 		<!-- Hero Image -->
     <?php if($image) { ?>
       <?php $background = wp_get_attachment_image_src($image, 'full', false); ?>
-	     <div class="hero products-hero" style="background-image: url('<?php echo $background[0] ?>');">
+	     <div class="hero mini-hero products-hero" style="background-image: url('<?php echo $background[0] ?>');">
          <div class="hero-text-wrapper">
            <div>
              <div class="hero-text">
