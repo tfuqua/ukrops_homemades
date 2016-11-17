@@ -17,10 +17,13 @@ get_header(); ?>
 								<div class="hero-header">
 	              	<?php echo get_field('hero_header')?>
 								</div>
+								<?php if(get_field('hero_body')){ ?>
 								<div class="hero-body">
 		              <?php echo get_field('hero_body')?>
 								</div>
-								<?php if(get_field('button_text')){ ?>
+								<?php
+								}
+								if(get_field('button_text')){ ?>
 									<div class="hero-buttons">
 										<a class="button" href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text'); ?></a>
 									</div>
