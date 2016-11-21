@@ -20,7 +20,7 @@ get_header(); ?>
                <?php echo get_field('hero_text')?>
                <?php if(get_field('button_text')) { ?>
                <div class="hero-button">
-                 <a href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text')?></a>
+                 <a class="button" href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text')?></a>
                </div>
                <?php } ?>
              </div>
@@ -81,7 +81,7 @@ get_header(); ?>
                   </div>
                   <?php if(get_field('button_text')) { ?>
                   <div class="hero-button">
-                    <a href="<?php echo get_field('button_2_link')?>"><?php echo get_field('button_2_text')?></a>
+                    <a class="button" href="<?php echo get_field('button_2_link')?>"><?php echo get_field('button_2_text')?></a>
                   </div>
                   <?php } ?>
                 </div>
