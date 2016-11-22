@@ -58,11 +58,9 @@
       padding-bottom: 40px;
     }
   }
-
     .hero-text{
 
       background: rgba(255,255,255, .8);
-
       font-size: 22px;
       font-weight: 400;
       font-style: normal;
@@ -71,6 +69,7 @@
       color: #794400;
       position: relative;
       z-index: 200;
+      margin: 30px auto;
 
       h3 {
         font-size: 40px;
@@ -82,7 +81,7 @@
       }
 
       @media (min-width: $screen-md-min) {
-
+        margin: 30px 15px;
       }
 
       .hero-button {

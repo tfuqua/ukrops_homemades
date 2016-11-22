@@ -80,7 +80,8 @@ header {
     line-height: 1.59;
     color: #794400;
     position: relative;
-    z-index: 200; }
+    z-index: 200;
+    margin: 30px auto; }
     .hero.hero-2 .hero-text h3 {
       font-size: 40px;
       font-weight: 500;
@@ -88,6 +89,9 @@ header {
       font-stretch: normal;
       line-height: 1.2;
       color: #c1311a; }
+    @media (min-width: 900px) {
+      .hero.hero-2 .hero-text {
+        margin: 30px 15px; } }
     .hero.hero-2 .hero-text .hero-button a {
       border-radius: 5px;
       color: #fff;
