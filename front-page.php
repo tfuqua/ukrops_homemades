@@ -17,12 +17,17 @@ get_header(); ?>
          <div class="hero-text-wrapper">
            <div>
              <div class="hero-text">
-               <?php echo get_field('hero_text')?>
-               <?php if(get_field('button_text')) { ?>
-               <div class="hero-button">
-                 <a class="button" href="<?php echo get_field('button_link')?>"><?php echo get_field('button_text')?></a>
-               </div>
-               <?php } ?>
+               <div class="hero-header">
+                  <?php echo get_field('hero_heading')?>
+                </div>
+                <div class="hero-body">
+                  <?php echo get_field('hero_body')?>
+                </div>
+                <?php if(get_field('hero_button')) { ?>
+                  <div>
+                    <a class="button" href="<?php echo get_field('hero_button_link')?>"><?php echo get_field('hero_button')?></a>
+                  </div>
+                <?php } ?>
              </div>
            </div>
          </div>
@@ -40,16 +45,14 @@ get_header(); ?>
                 <h3><?php echo the_sub_field('heading');?></h3>
                 <div class="featured-section">
                   <div class="featured-body">
-                    <div class="flex-div">
-                    <div>
-                      <?php echo the_sub_field('body');?>
-                    </div>
-                    <?php if (get_sub_field('image')) { ?>
-                      <div class="featured-img">
-                        <?php echo wp_get_attachment_image(get_sub_field('image'), 'medium', false, array( 'class' => 'lazy-load'));?>
+                      <?php if (get_sub_field('image')) { ?>
+                        <div class="featured-img">
+                          <?php echo wp_get_attachment_image(get_sub_field('image'), 'medium', false, array( 'class' => 'lazy-load'));?>
+                        </div>
+                      <?php } ?>
+                      <div>
+                          <?php echo the_sub_field('body');?>
                       </div>
-                    <?php } ?>
-                    </div>
                   </div>
                   <div class="featured-button">
                     <a href="<?php echo the_sub_field('button_link')?>">

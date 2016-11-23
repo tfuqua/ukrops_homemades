@@ -48,6 +48,34 @@ get_header(); ?>
 				<?php
 				}?>
 
+		 <?php if(get_field('child_products')) { ?>
+			 <div class="container-fluid">
+ 				<div class="row">
+					<div class="product-list">
+						<?php
+						$pageID = get_the_ID();
+
+						 $args = array(
+							'sort_order' => 'asc',
+							'sort_column' => 'ID',
+							'parent' => $pageID,
+							'post_type' => 'page',
+						);
+						$pages = get_pages($args);
+
+						foreach ($pages as $page){
+							$post = $page;
+							setup_postdata( $post);
+							get_template_part( 'templates/product-child-card', get_post_format());
+							wp_reset_postdata();
+						}
+						?>
+					</div>
+				</div>
+			</div>
+		 <?php
+			} else {
+			?>
       <div class="container-fluid product-content">
 				<div class="row">
 					<div class="col-lg-8 col-lg-push-2 col-md-10 col-md-push-1">
@@ -128,7 +156,9 @@ get_header(); ?>
 
 					<?php } ?>
 				</div>
-		<?php } ?>
+		<?php }
+		}	//End of check if has children
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

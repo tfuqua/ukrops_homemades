@@ -82,7 +82,7 @@ get_header(); ?>
 							$m = '<ul>';
 							foreach ( $children as $child) {
 
-								$link = get_field('skip_link', $child);
+								$link = get_field('skip_url', $child);
 
 								if (empty($link) or $link == null){
 									$link = get_term_link($child);

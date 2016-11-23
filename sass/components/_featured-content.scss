@@ -45,32 +45,18 @@
 
 
     @media (min-width: $screen-md-min) {
-      .flex-div{
-        display: flex;
 
-          > div {
-            flex: 1;
-          }
-      }
     }
 
     .featured-img {
       text-align: center;
+      padding:0 0 10px;
 
       img {
         max-width:75%;
         min-width: 0%;
+        width: auto;
         height:auto;
-
-        @media (min-width: $screen-md-min) {
-          min-height: auto;
-          max-width:100%;
-        }
-
-        @media (min-width: $screen-lg-min) {
-          max-width:100%;
-          margin-top:-45px;
-        }
       }
     }
 
@@ -102,7 +88,7 @@
       font-size: 32px;
       margin:0;
       padding: 35px 40px 15px;
-      font-size: 30px;
+      font-size: 26px;
       font-weight: 500;
       font-style: normal;
       font-stretch: normal;
