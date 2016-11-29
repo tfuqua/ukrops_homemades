@@ -11,7 +11,7 @@
 		<div class="product-section">
 			<h3><?php the_title(); ?></h3>
 			<div class="blurb">
-				<?php echo excerpt('20'); ?>
+				<?php echo excerpt('60'); ?>
 			</div>
 		</div>
 		<div class="product-buttons <?php if(get_field('order_link') && get_field('about_link')){echo 'two-buttons';}?>">
