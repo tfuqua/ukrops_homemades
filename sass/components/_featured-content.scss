@@ -17,14 +17,15 @@
       -webkit-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
 
       &:nth-child(3n){
-        flex:1;
+        @include flex();
       }
       &:nth-child(n){
         background: #fff;
       }
     }
 
-    .featured-border{
+    .featured-item:after{
+      content: "";
       border: 1px dashed #704400;
       position: absolute;
       margin:20px;
@@ -98,4 +99,12 @@
       text-shadow: none;
     }
   }
+}
+
+.featured-item{
+  
+}
+.featured-section{
+  //display: none;
+  @include flex(1 0 auto);
 }

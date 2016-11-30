@@ -129,10 +129,15 @@ header {
       -moz-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
       -webkit-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15); }
       .featured-content-wrapper .container-fluid .featured-item:nth-child(3n) {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
         flex: 1; }
       .featured-content-wrapper .container-fluid .featured-item:nth-child(n) {
         background: #fff; }
-    .featured-content-wrapper .container-fluid .featured-border {
+    .featured-content-wrapper .container-fluid .featured-item:after {
+      content: "";
       border: 1px dashed #704400;
       position: absolute;
       margin: 20px;
@@ -182,3 +187,10 @@ header {
       text-transform: capitalize;
       background: url("images/cream.png") top left repeat;
       text-shadow: none; }
+
+.featured-section {
+  -webkit-box-flex: 1 0 auto;
+  -moz-box-flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
