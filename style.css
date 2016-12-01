@@ -13,7 +13,7 @@ header {
     position: absolute;
     top: 0;
     margin: 0;
-    margin-left: -65px;
+    margin-left: -50px;
     left: 50%;
     z-index: 600;
     height: 100px; }
@@ -107,7 +107,8 @@ header {
     @media (min-width: 481px) {
       .hero.hero-2 .hero-img-wrapper {
         left: 50%;
-        height: 105%; } }
+        height: 100%;
+        top: 0; } }
     .hero.hero-2 .hero-img-wrapper img {
       height: 100%;
       width: auto; }
@@ -138,8 +139,10 @@ header {
         background: #fff; }
     .featured-content-wrapper .container-fluid .featured-item:after {
       content: "";
-      border: 1px dashed #704400;
       position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px dashed #704400;
       margin: 20px;
       width: calc(100% - 40px);
       height: calc(100% - 40px); }
