@@ -119,25 +119,25 @@ header {
 
 .featured-content-wrapper {
   background-image: none; }
-  .featured-content-wrapper .container-fluid {
+  .featured-content-wrapper .featured-items {
     padding: 0 30px;
     margin: 0 auto;
     z-index: 2; }
-    .featured-content-wrapper .container-fluid .featured-item {
+    .featured-content-wrapper .featured-items .featured-item {
       background: #fff;
       position: relative;
       box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
       -moz-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
       -webkit-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15); }
-      .featured-content-wrapper .container-fluid .featured-item:nth-child(3n) {
+      .featured-content-wrapper .featured-items .featured-item:nth-child(3n) {
         -webkit-box-flex: 1;
         -moz-box-flex: 1;
         -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1; }
-      .featured-content-wrapper .container-fluid .featured-item:nth-child(n) {
+      .featured-content-wrapper .featured-items .featured-item:nth-child(n) {
         background: #fff; }
-    .featured-content-wrapper .container-fluid .featured-item:after {
+    .featured-content-wrapper .featured-items .featured-item:after {
       content: "";
       position: absolute;
       top: 0;
@@ -146,23 +146,42 @@ header {
       margin: 20px;
       width: calc(100% - 40px);
       height: calc(100% - 40px); }
-    .featured-content-wrapper .container-fluid .featured-section {
+    .featured-content-wrapper .featured-items .featured-section {
       margin: 5px 25px 25px;
       z-index: 200;
-      background: none; }
+      background: none;
+      -webkit-box-flex: 1 0 auto;
+      -moz-box-flex: 1 0 auto;
+      -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
       @media (min-width: 900px) {
-        .featured-content-wrapper .container-fluid .featured-section {
+        .featured-content-wrapper .featured-items .featured-section {
           margin: 0;
           padding: 10px 40px 40px; } }
-    .featured-content-wrapper .container-fluid .featured-img {
+    .featured-content-wrapper .featured-items .featured-img {
       text-align: center;
       padding: 0 0 10px; }
-      .featured-content-wrapper .container-fluid .featured-img img {
+      .featured-content-wrapper .featured-items .featured-img img {
         max-width: 75%;
         min-width: 0%;
         width: auto;
         height: auto; }
-    .featured-content-wrapper .container-fluid .featured-body {
+    .featured-content-wrapper .featured-items .featured-body {
+      -webkit-box-flex: 1 0 auto;
+      -moz-box-flex: 1 0 auto;
+      -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
       font-size: 18px;
       font-weight: normal;
       font-style: normal;
@@ -170,14 +189,14 @@ header {
       line-height: 1.5;
       color: #794400; }
       @media (min-width: 900px) {
-        .featured-content-wrapper .container-fluid .featured-body {
+        .featured-content-wrapper .featured-items .featured-body {
           text-align: left; } }
-    .featured-content-wrapper .container-fluid .featured-button a {
+    .featured-content-wrapper .featured-items .featured-button a {
       color: #fff;
       border-radius: 5px;
       background-image: linear-gradient(to bottom, #db2c10, #bf311a);
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); }
-    .featured-content-wrapper .container-fluid h3 {
+    .featured-content-wrapper .featured-items h3 {
       width: 100%;
       font-size: 32px;
       margin: 0;
@@ -190,10 +209,3 @@ header {
       text-transform: capitalize;
       background: url("images/cream.png") top left repeat;
       text-shadow: none; }
-
-.featured-section {
-  -webkit-box-flex: 1 0 auto;
-  -moz-box-flex: 1 0 auto;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto; }

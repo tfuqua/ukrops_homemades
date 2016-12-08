@@ -2,7 +2,7 @@
 
   background-image: none;
 
-  .container-fluid {
+  .featured-items {
 
       padding: 0 30px;
       margin: 0 auto;
@@ -17,7 +17,7 @@
       -webkit-box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.15);
 
       &:nth-child(3n){
-        @include flex();
+        @include flex(1);
       }
       &:nth-child(n){
         background: #fff;
@@ -39,6 +39,9 @@
       margin: 5px 25px 25px;
       z-index: 200;
       background: none;
+      @include flex(1 0 auto);
+      @include flexbox();
+      @include flex-direction(column);
 
       @media (min-width: $screen-md-min) {
         margin:0;
@@ -64,6 +67,8 @@
     }
 
     .featured-body{
+      @include flex(1 0 auto);
+
       font-size: 18px;
       font-weight: normal;
       font-style: normal;
@@ -105,8 +110,4 @@
 
 .featured-item{
 
-}
-.featured-section{
-  //display: none;
-  @include flex(1 0 auto);
 }

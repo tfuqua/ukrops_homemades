@@ -7,7 +7,7 @@
     display: flex;
 }
 
-@mixin flex($val: 1) {
+@mixin flex($val: 1 0 auto) {
   -webkit-box-flex: $val;
   -moz-box-flex:  $val;
   -webkit-flex:  $val;
